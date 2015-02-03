@@ -1,4 +1,82 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\000036}}
+body {
+  font-family: "Roboto Condensed";
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000314}}
+.block:hover .context-img {
+  -webkit-clip-path: circle(0% at -10px 50%);
+  clip-path: circle(0% at -10px 50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000321}}
+.block:hover h2 {
+  z-index: 300;
+  color: white;
+  position: absolute;
+  bottom: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000331}}
+.block {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #EEE;
+  border-radius: 4px;
+  margin: 0.6em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000346}}
+.block .category {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #333333;
+  color: white;
+  padding: 0.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000355}}
+.block .content {
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000364}}
+.block .context-img {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-clip-path: circle(150% at 50% 50%);
+  clip-path: circle(150% at 50% 50%);
+  background-image: url(http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg);
+  background-position: 0% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000384}}
+.block h2 {
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 300;
+  color: white;
+  position: absolute;
+  bottom: -1.1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000393}}
+.block h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003102}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -7,14 +85,8 @@
 }
 
 /* Space out content a bit */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000312}}
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003114}}
 .header,
 .marketing,
 .footer {
@@ -23,12 +95,13 @@ body {
 }
 
 /* Custom page header */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003120}}
 .header {
   border-bottom: 1px solid #e5e5e5;
+  background-color: #EEE;
   /* Make the masthead heading the same height as the navigation */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003125}}
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -37,49 +110,49 @@ body {
 }
 
 /* Custom page footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003140}}
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003145}}
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003149}}
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003156}}
 .marketing {
   margin: 40px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003159}}
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003166}}
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003173}}
   .header,
   .marketing,
   .footer {
@@ -88,13 +161,13 @@ body {
   }
 
   /* Space out the masthead */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003178}}
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/jerome\/dev\/lo2k_website\/app\/styles\/main\.scss}line{font-family:\00003182}}
   .jumbotron {
     border-bottom: 0;
   }
