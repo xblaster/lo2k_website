@@ -5,11 +5,13 @@
   <div class="block" layout="row" flex="100">
     <div class="content" layout-fill layout="column" flex>
       <div class="context-img"></div>
-      <h2 class="md-tiilbar-tools"><a href="{{project.link}}">{{project.name}}</a></h2>
-      <div><span ng-repeat="tag in project.tags"><em>{{tag}}</em>,
-      </span></div>
+      <h2 class="md-tiilbar-tools">{{project.name}}</h2>
+      <!--<a href="{{project.link}}">{{project.name}}</a>-->
+     
       <p flex>{{project.description}}</p>
-      <!-- <p>{{project.date | date}}</p>-->
+       <div><span ng-repeat="tag in project.tags"><em>{{tag}}</em>,
+      </span></div>
+      <p><small>{{project.date | date}}</small></p>
       
       
       <div class="category">#{{project.category}}</div>
