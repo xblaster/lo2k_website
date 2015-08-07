@@ -28,11 +28,14 @@ angular.module('lo2kWebsiteApp')
                    var entry = data.feed.entry[i];
 
                    var obj = {};
+                   obj.id = i;
                    obj.link = entry.gsx$link.$t;
                    obj.description = entry.gsx$description.$t;
                    obj.category = entry.gsx$category.$t;
                    obj.name = entry.gsx$name.$t;
                    obj.date = entry.gsx$date.$t;
+                   obj.importance = entry.gsx$importance.$t;
+                   obj.background = entry.gsx$background.$t;
                    obj.momentDate = moment(obj.date, "DD/MM/YYYY");
                    obj.unixDate = moment(obj.date, "DD/MM/YYYY").valueOf();
                    obj.tags = entry.gsx$tags.$t.split(",");

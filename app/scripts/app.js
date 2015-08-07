@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,7 +24,15 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })     
+      .when('/projects/:id/view', {
+        templateUrl: 'views/projects/view.html',
+        controller: 'ProjectsViewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  }).config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('blue')
+    .accentPalette('orange');
+});;

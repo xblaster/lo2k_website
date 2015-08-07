@@ -1,21 +1,28 @@
-<div class="header"><img src="images/logo.png"/></div>
-<md-content layout="row" layout-wrap>
 
-<div  ng-repeat="project in projects" flex="33" flex-sm="100" flex-md="50" layout="row">
-  <div class="block" layout="row" flex="100">
-    <div class="content" layout-fill layout="column" flex>
-      <div class="context-img"></div>
-      <h2 class="md-tiilbar-tools">{{project.name}}</h2>
-      <!--<a href="{{project.link}}">{{project.name}}</a>-->
-     
-      <p flex>{{project.description}}</p>
-       <div><span ng-repeat="tag in project.tags"><em>{{tag}}</em>,
-      </span></div>
-      <p><small>{{project.date | date}}</small></p>
-      
-      
-      <div class="category">#{{project.category}}</div>
-    </div>
+<div layout="row" layout-wrap layout-fill layout-padding class="md-padding">
+<div ng-repeat="project in projects" layout-fill flex="33" flex-sm="100" flex-md="50" layout="row" style="position: relative">
+  <md-card   class="md-clickable project" layout-fill>
+
+    <img ng-src="{{project.background}}" class="md-card-image">
+    <md-card-content flex>
+    <h2 class="md-title">{{project.name}}</h2>
+      <p >
+    
+            {{project.description}}
+      </p>
+    </md-card-content>
+
+    <md-button class="md-fab md-secondary md-hue-1" style="position: absolute; bottom: -1.5em; right: 1em;">
+      <span class="fa fa-play"></span>
+    </md-button>
+
+
+    <!-- <div class="md-actions md-padding" layout="row" layout-align="">
+      <p flex>{{project.date}}</p> 
+      <md-button class="md-fab md-primary md-hue-1">
+      <span class="fa fa-play"></span>
+      </md-button>
+    </div> -->
+  </md-card>
   </div>
 </div>
-</md-content>
